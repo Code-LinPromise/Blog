@@ -1,0 +1,36 @@
+.allSkill{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  .skills{
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    .title{
+      font-family: "思源宋体 Medium";
+      font-size: 30px;
+      animation-duration: 2s;
+      animation-name: listShow;
+    }
+    .list{
+      font-family: "思源宋体 Medium";
+      font-size: 20px;
+      margin-left: 50px;
+      animation-duration: 2s;
+      animation-name: listShow;
+    }
+    @keyframes listShow {
+      from {
+        opacity: 0;
+        transform:translate(0px,15px) ;
+      }
+
+      to {
+        opacity: 1;
+        transform:translate(0px,0px) ;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,95 @@
+.user{
+  width: 240px;
+  margin-left: 200px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  .img{
+    width: 200px;
+    border-radius: 50%;
+  }
+  .detailsName{
+    font-size: 24px;
+    font-family: "思源宋体 Medium";
+    margin-top: 5px;
+  }
+  .detailsSay{
+    font-size: 16px;
+    font-family: "思源宋体 Medium";
+    margin-top: 5px;
+    color: #999999;
+  }
+  .toggle{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 0 ;
+    border-bottom: 1px solid #999999;
+    .youxiang{
+      color: #999999;
+      font-size: 30px;
+      transition: all 0.3s;
+    }
+    .youxiang:hover{
+      color: #2dc653;
+    }
+    .github{
+      color: #999999;
+      font-size: 30px;
+      margin-left: 15px;
+      transition: all 0.3s;
+    }
+    .github:hover{
+      color: black;
+    }
+    .weixin{
+      color: #999999;
+      font-size: 35px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+      .wechat{
+        width: 100px;
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        display: none;
+      }
+    }
+    .weixin:hover{
+      color: #2dc653;
+    }
+  }
+  .idCard{
+    margin-top: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    .idIcon{
+      color: #999999;
+      font-size: 26px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .idCardP{
+      color: #999999;
+      font-family: "思源宋体 Medium";
+      font-weight: 700;
+      margin-left: 15px;
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+  .idCard:hover{
+    .idIcon{
+      color: #077187;
+    }
+    .idCardP{
+      color: #077187;
+    }
+  }
+}

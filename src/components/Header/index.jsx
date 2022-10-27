@@ -1,8 +1,13 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import style from "./style.module.scss"
+import {useNavigate} from "react-router-dom"
 
-const Header = () => {
-
+const Header = (props) => {
+    const {name,details}=props
+    const navigate=useNavigate()
+    function GoMain(){
+        navigate("/")
+    }
     return (
         <div className={style.background} >
             <div className={style.top}>
@@ -15,13 +20,13 @@ const Header = () => {
                     </a>
 
                 </div>
-                <div>
+                <div onClick={GoMain}>
                     <p className={style.userTop} title="回到主页面">Promise's Studio.</p>
                 </div>
             </div>
             <div>
-                <h1 id="h1" className={style.font1}>Promise's Studio.</h1>
-                <h2 id="h2" className={style.font2}>A blog about technology and stuff related</h2>
+                <h1 id="h1" className={style.font1}>{name}</h1>
+                <h2 id="h2" className={style.font2}>{details}</h2>
             </div>
         </div>
 
