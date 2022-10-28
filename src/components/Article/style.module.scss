@@ -1,0 +1,113 @@
+.article{
+  width: 600px;
+  padding: 20px 10px;
+  display: inline-block;
+  border-bottom: 1px dashed #999999 ;
+  .name{
+    font-family: "思源宋体 Medium";
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .name:hover{
+    color: #077187;
+  }
+  .details{
+    font-family: "思源宋体 Medium";
+    font-size: 16px;
+    margin-top: 10px;
+    color: #999999;
+    font-weight: 400;
+  }
+  .readArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .readArticleFont{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .iconContent{
+        color: #999999;
+        user-select: none;
+        transition: all 0.3s;
+        font-family: "思源宋体 Medium";
+      }
+      .iconFile{
+        color: #999999;
+        margin-left: 3px;
+        font-size: 18px;
+        font-weight: 700;
+        user-select: none;
+        transition: all 0.3s;
+      }
+    }
+    .readArticleFont:hover{
+      .iconContent{
+        color: #077187;
+      }
+      .iconFile{
+        color: #077187;
+      }
+    }
+  }
+  .timeAndType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .timeFontAndIcon{
+      display: flex;
+      align-items: center;
+      .timeFont{
+        font-family: "思源宋体 Medium";
+        color: #999999;
+        margin-left: 5px;
+      }
+      .timeIcon{
+        color: #999999;
+        font-size: 24px;
+      }
+    }
+    .typeFontAndIcon{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+      transition: all 0.5s;
+      cursor: pointer;
+      position: relative;
+      .typeFont{
+        color: #999999;
+        margin-left: 10px;
+      }
+      .typeIcon{
+        color: #999999;
+      }
+    }
+    .typeFontAndIcon::after{
+      content:"";
+      position: absolute;
+      top: 25px;
+      width: 100%;
+      background-color: #999999;
+      height: 4px;
+      border-radius: 18px;
+      opacity: 0;
+    }
+    .typeFontAndIcon:hover::after{
+      animation-name: showBottom;
+      animation-duration: 1s;
+    }
+    @keyframes showBottom {
+      from{
+        transform:translate(0,5px);
+      }
+      to{
+        opacity: 1;
+        transform:translate(0,0px);
+      }
+    }
+
+  }
+}

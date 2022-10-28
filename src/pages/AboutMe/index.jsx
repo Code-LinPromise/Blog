@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from "../../components/Header/index.jsx";
 import style from "./style.module.scss"
+import Image from "../../assets/AboutMeImage.jpg"
 const About = () => {
     return (
         <div>
-            <Header name={"About Me."} details={""}/>
+            <Header name={"About Me."} details={""} image={Image}/>
             <div className={style.allSkill}>
                 <div className={style.skills}>
                     <h2 className={style.title}>Skills</h2>

@@ -3,13 +3,13 @@ import style from "./style.module.scss"
 import {useNavigate} from "react-router-dom"
 
 const Header = (props) => {
-    const {name,details}=props
+    const {name,details,image}=props
     const navigate=useNavigate()
     function GoMain(){
         navigate("/")
     }
     return (
-        <div className={style.background} >
+        <div className={style.background} style={{backgroundImage: `url(${image})`}} >
             <div className={style.top}>
                 <div className={style.topLeft}>
                     <span className={[style.toggle,"iconfont icon-liebiao"].join(" ")} title="打开列表"></span>
