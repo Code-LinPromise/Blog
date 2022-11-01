@@ -53,6 +53,7 @@
     }
   }
   .timeAndType{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +71,6 @@
       }
     }
     .typeFontAndIcon{
-      margin-top: 20px;
       display: flex;
       align-items: center;
       padding-bottom: 5px;
@@ -98,14 +98,15 @@
     .typeFontAndIcon:hover::after{
       animation-name: showBottom;
       animation-duration: 1s;
+      opacity: 1;
     }
     @keyframes showBottom {
       from{
         transform:translate(0,5px);
       }
       to{
-        opacity: 1;
         transform:translate(0,0px);
+        opacity: 1;
       }
     }
 
