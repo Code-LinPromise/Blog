@@ -1,0 +1,12 @@
+.archive{
+  animation-name: come;
+  animation-duration: 0.3s;
+}
+@keyframes come {
+  from{
+    transform: translate(-100%);
+  }
+  to{
+    transform: translate(0%);
+  }
+}

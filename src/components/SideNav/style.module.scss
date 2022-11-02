@@ -1,5 +1,41 @@
 .sideNav{
-  width: 500px;
+  width: 25%;
   height: 100vh;
   display: inline-block;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  background-color: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .ul{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #999999;
+    position: relative;
+    li{
+      display: inline-block;
+      width: 33.33%;
+      text-align: center;
+      padding: 5px 10px;
+      color: white;
+      font-family: "思源宋体 Medium";
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .span{
+      position: absolute;
+      width: 33.33%;
+      height: 3px;
+      left: 0;
+      top: 100%;
+      background-color: #f75357;
+      transition: all 0.5s
+    }
+  }
+
+
 }
