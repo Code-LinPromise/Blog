@@ -19,7 +19,7 @@ const Header = (props) => {
                     <a href="https://github.com/Code-LinPromise" className={style.toggle}
                        target="_blank"
                     >
-                        <span className="iconfont icon-github" title="Github"></span>
+                        <span className="iconfont icon-github" title="Github" style={{fontSize:"24px"}}></span>
                     </a>
 
                 </div>

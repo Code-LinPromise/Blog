@@ -1,10 +1,12 @@
 .right{
   min-width: 900px;
   width: 75%;
+  height: 100vh;
   display: inline-block;
   vertical-align: top;
   transition: all 0.3s ease-in;
   position: relative;
+  background-color: white;
   .allSkill{
     display: flex;
     width: 100%;

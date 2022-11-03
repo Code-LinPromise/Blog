@@ -8,6 +8,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  z-index: -99999;
   .ul{
     display: inline-block;
     width: 100%;
@@ -20,11 +21,26 @@
       width: 33.33%;
       text-align: center;
       padding: 5px 10px;
-      color: white;
+      color: #eee;
       font-family: "思源宋体 Medium";
       cursor: pointer;
       font-size: 20px;
       font-weight: 700;
+      .jilu{
+        color: #eee;
+        font-size: 24px;
+        margin-right: 5px;
+      }
+      .biaoqian{
+        color: #eee;
+        font-size: 22px;
+        margin-right: 8px;
+      }
+      .wenjian{
+        color: #eee;
+        font-size: 20px;
+        margin-right: 8px;
+      }
     }
     .span{
       position: absolute;

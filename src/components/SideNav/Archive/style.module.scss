@@ -1,6 +1,45 @@
 .archive{
   animation-name: come;
   animation-duration: 0.3s;
+  .total{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-family: "思源宋体 Medium";
+    font-size: 20px;
+    color: #f75357;
+  }
+  .mapUl{
+    margin-top: 20px;
+    margin-left: 30px;
+    .mapItem{
+      list-style: none;
+      padding: 10px 0 5px 10px;
+      border-left: 1px solid #999999;
+      transition: all 0.1s;
+      cursor: pointer;
+      .time{
+        color: #999999;
+        font-family: "思源宋体 Medium";
+        font-size: 16px;
+      }
+      .details{
+        font-family: "思源宋体 Medium";
+        font-size: 16px;
+        color: #ccc;
+        margin-left: 20px;
+      }
+    }
+    .mapItem:hover{
+      border-left: 1px solid  #f75357;
+      color: #f75357;
+      .time{
+        color: #f75357;
+      }
+      .details{
+        color: #f75357;
+      }
+    }
+  }
 }
 @keyframes come {
   from{

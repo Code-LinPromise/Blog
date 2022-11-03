@@ -3,6 +3,7 @@ import style from "./style.module.scss"
 import Archive from "./Archive/index.jsx";
 import Cate from "./Cate/index.jsx";
 import Tag from "./Tag/index.jsx";
+import {nanoid} from "nanoid";
 const SideNav = (props) => {
     const [showComponent,setShowComponent]=useState(0)
     const {isShowNav}=props
@@ -17,18 +18,18 @@ const SideNav = (props) => {
         }
     },[])
     return (
-        <div className={style.sideNav} style={isShowNav?{width:"25%"}:{width:"0%"}}>
+        <div className={style.sideNav} style={isShowNav?{zIndex:"100"}:{zIndex:"-99999"}}>
             <ul id="sideNav" className={style.ul} >
                 <li className="liItem">
-                    <span></span>
+                    <span className={[style.jilu,"iconfont icon-lishijilu_huaban"].join(" ")}></span>
                     Archive
                 </li>
                 <li className="liItem">
-                    <span></span>
+                    <span  className={[style.biaoqian,"iconfont icon-biaoqian"].join(" ")}></span>
                     Tag
                 </li>
                 <li className="liItem">
-                    <span></span>
+                    <span className={[style.wenjian,"iconfont icon-wenjianjia"].join(" ")}></span>
                     Cate
                 </li>
                 <span className={style.span} id="locationBottom"></span>
